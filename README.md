@@ -1,3 +1,3 @@
 # walmartDemo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MybPc4ATixc" frameborder="0" allowfullscreen></iframe>
+[![walmart demo](https://img.youtube.com/vi/MybPc4ATixc/0.jpg)](https://www.youtube.com/watch?v=MybPc4ATixc)
