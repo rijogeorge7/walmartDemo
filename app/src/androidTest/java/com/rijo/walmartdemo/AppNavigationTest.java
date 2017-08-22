@@ -41,9 +41,4 @@ public class AppNavigationTest {
 
     }
 
-    @Test
-    public void mainNavigationTest2() throws Exception {
-        onView(withId(R.id.productList_recycler_view))
-                .check(matches(isDisplayed()));
-    }
 }
