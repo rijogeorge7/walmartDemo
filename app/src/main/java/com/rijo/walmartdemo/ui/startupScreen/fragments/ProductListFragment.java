@@ -27,6 +27,8 @@ public class ProductListFragment extends Fragment {
     private OnScrolledToEndListener loadMoreCallback;
     ProductsRecyclerAdapter productsRecyclerAdapter;
 
+    private static final int loadMoreThreshold=15;
+
     public ProductListFragment() {
         // Required empty public constructor
     }
@@ -65,7 +67,7 @@ public class ProductListFragment extends Fragment {
                 super.onScrolled(recyclerView, dx, dy);
                 int totalItemCount = mLayoutManager.getItemCount();
                 int lastVisibleItem = mLayoutManager.findLastVisibleItemPosition();
-                if (!isLoading && totalItemCount <= (lastVisibleItem + 5)) {
+                if (!isLoading && totalItemCount <= (lastVisibleItem + loadMoreThreshold)) {
                     isLoading = true;
                     progressBar.setVisibility(View.VISIBLE);
                     loadMoreCallback.LoadMore();
